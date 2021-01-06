@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" 
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	
+	
+	<persistence-unit name="sonet">
+	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	<class>modelo.Contrato</class>
+	<class>modelo.Asesor</class>
+	<class>modelo.PersonaNatural</class>
+	<class>modelo.PersonaJuridica</class>
+	<class>modelo.DireccionInstalacion</class>
+	<class>modelo.Servicio</class>
+	<class>modelo.FormaDePago</class>
+	<class>modelo.RedDeAcceso</class>
+	<class>modelo.ServicioAdicional</class>
+	<class>modelo.TarifaUnPago</class>
+	<class>modelo.TarifaMensual</class>
+	<class>modelo.ComprobanteDePago</class>
+	<properties>
+		<property name="eclipselink.ddl-generation" value="create-tables"/>
+		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/dbsonet"/>
+		<property name="javax.persistence.jdbc.user" value="root"/>
+		<property name="javax.persistence.jdbc.password" value="root"/>
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+	</properties>
+	</persistence-unit>
+
+</persistence>
